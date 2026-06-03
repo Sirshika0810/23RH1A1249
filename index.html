@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Full Project</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+
+    <a class="navbar-brand fw-bold" href="#">MySite</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="container text-center mt-5">
+
+  <h1 class="display-4">Hi, I'm a Web Developer</h1>
+  <p class="lead text-muted">I build responsive websites using Bootstrap</p>
+
+  <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#myModal">
+    Open Modal
+  </button>
+
+</div>
+
+<!-- MODAL -->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Welcome Popup</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        Hello! This is a Bootstrap Modal 🚀
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT + COLLAPSE -->
+<div class="container mt-5 text-center">
+
+  <h2>About Me</h2>
+
+  <p class="text-muted">
+    I am learning Bootstrap for frontend development.
+  </p>
+
+  <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#more">
+    Read More
+  </button>
+
+  <div id="more" class="collapse mt-3">
+    I enjoy building responsive UI using Bootstrap and improving my web skills.
+  </div>
+
+</div>
+
+<!-- ACCORDION -->
+<div class="container mt-5">
+
+  <h2 class="text-center mb-3">FAQ</h2>
+
+  <div class="accordion" id="faq">
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#q1">
+          What is Bootstrap?
+        </button>
+      </h2>
+      <div id="q1" class="accordion-collapse collapse show" data-bs-parent="#faq">
+        <div class="accordion-body">
+          Bootstrap is a CSS framework for responsive design.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q2">
+          Why use Bootstrap?
+        </button>
+      </h2>
+      <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faq">
+        <div class="accordion-body">
+          It helps build websites faster and easier.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- PROJECTS -->
+<div class="container mt-5">
+
+  <h2 class="text-center mb-4">My Projects</h2>
+
+  <div class="row g-4">
+
+    <div class="col-md-4">
+      <div class="card shadow p-3 text-center">
+        <h5>Login Page</h5>
+        <button class="btn btn-primary">View</button>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow p-3 text-center">
+        <h5>Profile Card</h5>
+        <button class="btn btn-success">View</button>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow p-3 text-center">
+        <h5>Contact Form</h5>
+        <button class="btn btn-danger">View</button>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- CONTACT -->
+<div class="container mt-5">
+
+  <h2 class="text-center">Contact Me</h2>
+
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+
+      <form class="card p-4 shadow">
+
+        <input type="text" class="form-control mb-3" placeholder="Name">
+        <input type="email" class="form-control mb-3" placeholder="Email">
+        <textarea class="form-control mb-3" rows="4" placeholder="Message"></textarea>
+
+        <button class="btn btn-primary w-100">Send Message</button>
+
+      </form>
+
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center p-3 mt-5">
+  © 2026 My Portfolio | Bootstrap JS Project
+</footer>
+
+<!-- BOOTSTRAP JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
